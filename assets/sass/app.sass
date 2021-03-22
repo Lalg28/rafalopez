@@ -1,0 +1,1314 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700;1,500&display=swap');
+
+//Fuentes principales
+
+//Colores
+$Negro: #0D0E05
+$Blanco: #FEFEFE
+$Cafe: #AF8664
+$Rojo: #7D1401
+
+//Breakpoints
+$breakpoint-celular: 640px
+$breakpoint-tablet: 768px
+$breakpoint-pc: 1100px
+
+///GENERALES
+html
+    box-sizing: border-box
+    overflow-x: hidden!important
+    margin-top: 0!important
+
+body
+    background-color: #F6F2E7
+    background-image: url(../img/background_pattern.jpg)
+    font-family: 'EB Garamond', serif
+    overflow-x: hidden!important
+
+// .overflow
+//     position: relative
+//     overflow-x: hidden
+
+button:focus,
+a:focus,
+.slick-slide:focus
+    outline: none
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+    -webkit-box-shadow: 0 0 0 30px white inset !important
+    box-shadow: 0 0 0 30px white inset !important
+
+.right-sidebar .content-area
+    width: 100%
+
+.titulo-principal
+    text-align: center
+    color: $Negro
+    font-size: 3rem
+    line-height: 1
+    span
+        position: relative
+        left: 4.8rem
+
+section
+    margin: 1.5rem 0
+    padding: 2rem 0
+    // overflow-y: hidden
+
+.site-header ul.menu li.current-menu-item > a
+    color: $Blanco
+    border-bottom: 1px solid $Blanco
+
+@media screen and (min-width: $breakpoint-tablet)
+    .overflow
+        overflow-x: visible
+
+    .titulo-principal
+        font-size: 3.2rem
+        margin-bottom: 3rem
+
+    .texto-trasero
+        font-size: 9.5rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .titulo-principal
+        font-size: 6rem
+
+    .texto-trasero
+        font-size: 19rem
+
+    
+
+//Display none
+.woocommerce-active .site-header .site-search,
+.woocommerce-active .site-header .site-header-cart,
+.right-sidebar .widget-area,
+.storefront-breadcrumb,
+.inner-section-banner h1,
+.woocommerce-products-header,
+.storefront-product-pagination a[rel=prev],
+.storefront-product-pagination a[rel=next]
+    display: none!important
+
+//CONTENEDORES
+.archive .site-main,
+.product-template-default .site-main
+        width: 100%
+        padding-right: 15px
+        padding-left: 15px
+        margin-right: auto
+        margin-left: auto
+
+@media screen and (min-width: 579px)
+    .product-template-default .site-main,
+    .archive .site-main
+        max-width: 540px
+
+@media screen and (min-width: 768px)
+    .product-template-default .site-main,
+    .archive .site-main
+        max-width: 720px
+
+@media screen and (min-width: 992px)
+    .product-template-default .site-main,
+    .archive .site-main
+        max-width: 960px
+
+@media screen and (min-width: 1200px)
+    .product-template-default .site-main,
+    .archive .site-main
+        max-width: 1140px
+
+//Header
+.site-header
+    background-color: transparent
+    border-bottom: none
+    color: white
+    position: relative
+    padding-bottom: 2rem
+
+    .site-branding a img
+        width: 10rem
+
+    button.menu-toggle
+        background-color: transparent 
+        border: none
+        margin-top: 1.6rem
+        font-size: 1.2rem
+        color: $Blanco
+
+    button.menu-toggle:after, 
+    button.menu-toggle:before, 
+    button.menu-toggle span:before
+        width: 1.2rem
+        background-color: $Blanco
+
+    .main-navigation .menu
+        text-align: center
+        font-weight: lighter
+
+    .main-navigation ul li a
+        padding: 0.3rem 0
+        font-size: 1.3rem
+        color: $Blanco
+        font-weight: bold
+        text-transform: uppercase
+        transition: all .2s ease
+        &:hover
+            text-shadow: 1px 1px 1px $Negro
+            text-decoration: none
+
+.home 
+    .site-header
+        margin-bottom: 30rem
+    .hentry
+        display: none
+
+.product-template-default
+    .site-header 
+        ul.menu li.current-menu-item > a
+            border-bottom: 1px solid $Negro
+        .site-branding a img
+            filter: invert(1)
+        .main-navigation ul li a
+            color: $Negro
+            &:hover
+                border-bottom: 1px solid $Negro
+                text-shadow: none
+
+@media screen and (min-width: $breakpoint-tablet)
+    .site-header
+        padding-top: 2.7rem
+        padding-bottom: 4rem
+
+        .main-navigation ul li a
+            font-size: .7rem
+            &:hover
+                border-bottom: 1px solid $Blanco
+
+        .site-branding 
+            position: absolute
+            width: 100%!important
+            top: 1rem
+            bottom: 0
+            right: 0
+            left: 10px
+            a img
+                margin: 0 auto
+
+        .main-navigation
+            width: 100%!important
+            .nav-menu
+                display: flex
+                justify-content: space-between
+                align-items: center
+                li
+                    padding: 0 .5rem
+                    &:nth-child(3)
+                        padding-right: 12rem
+                        flex-basis: 20%  
+                    
+
+    .home 
+        .site-header
+            padding-bottom: 0
+            margin-bottom: 28rem
+            
+                
+@media screen and (min-width: $breakpoint-pc)
+    .site-header
+        padding-top: 2.7rem
+        padding-bottom: 5rem
+        .main-navigation ul li a
+            font-size: 1rem
+            &:nth-child(3)
+                width: 70%!important
+
+        .main-navigation li
+            padding: 0 3rem
+            
+        .main-navigation
+            .nav-menu
+                li
+                    &:nth-child(3)
+                        a
+                            width: 70%
+    
+        .site-branding 
+            top: 0rem
+            left: 13px
+            a img
+                width: 12rem
+
+    .home 
+        .site-header
+            margin-bottom: 45rem!important
+
+@media screen and (min-width: 1150px)
+    .site-header
+        .main-navigation 
+            .nav-menu
+                li
+                    &:nth-child(3)
+                        flex-basis: 30%
+                        padding-right: 5rem
+                    &:nth-child(4)
+                        padding-left: 6rem
+                    &:nth-child(4),
+                    &:nth-child(5),
+                    &:nth-child(6)
+                        padding-right: 3rem
+                    
+
+//HERO
+.main-banners-container
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    height: 45rem
+    .item
+        background-image: url(../img/banner_home_rafa_lopez.jpg)
+        background-color: $Cafe
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        height: 100%
+        .hr-fade
+            border-width: 0 0 2px
+            background-color: transparent!important
+            $color: white
+            color: $color
+            border-image: linear-gradient(90deg, rgba($color, 0), rgba($color, 1) 50%, rgba($color, 0) 100%) 0 0 100%
+            border-style: solid
+            box-shadow: 1px 1px rgba($Negro, .1)
+            width: 90%
+        .top
+            position: absolute
+            top: 67%
+            bottom: 0
+            left: 5%
+            right: 0
+        .bottom
+            position: absolute
+            top: 88%
+            bottom: 0
+            left: 5%
+            right: 0
+        h1
+            position: absolute
+            top: 70%
+            bottom: 0
+            right: 0
+            left: 0
+            width: 90%
+            text-shadow: 3px 3px rgba($Negro, .5)
+    
+            font-size: 2.8rem
+            margin: 0 auto
+            text-align: center
+            color: $Blanco
+            span
+                position: relative
+                left: 4rem
+
+@media screen and (min-width: $breakpoint-tablet)
+    .main-banners-container
+        height: 40rem
+        .item
+            .hr-fade
+                width: 61%
+            .top
+                top: 72%
+                left: 21%
+            .bottom
+                top: 93%
+                left: 21%
+            h1
+                top: 75%
+                left: 0
+                font-size: 3rem
+                line-height: 1
+                span
+                    left: 8rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .main-banners-container
+        height: 60rem
+        .item
+            .hr-fade
+                width: 45%
+            .top
+                top: 60%
+                left: 28%
+            .bottom
+                top: 90%
+                left: 28%
+            h1
+                top: 63%
+                left: 0
+                font-size: 6rem
+                span
+                    left: 12rem
+
+.text-container
+    background-color: $Blanco
+    padding: 2rem
+    text-align: center
+    h2
+        font-size: 1.9rem
+        color: $Rojo
+    p
+        color: $Negro
+        font-size: 1.3rem
+        line-height: 1.2
+    a
+        color: $Rojo
+        font-size: 1.2rem
+        text-decoration: underline
+        font-style: italic
+        i
+            text-decoration: none
+
+//Rafa Lopez
+.rafa-lopez
+    img
+        width: 100%
+
+@media screen and (min-width: $breakpoint-tablet)
+    .rafa-lopez
+        margin-top: 5rem
+        
+        .container
+            position: relative
+
+        img
+            position: absolute
+            width: 16rem
+            top: -1rem
+            bottom: 0
+            left: 0
+            right: 0
+
+        .text-container
+            text-align: left
+            padding-left: 18rem
+            h2
+                font-size: 2.2rem
+            p
+                font-size: 1.1rem
+                padding-left: 2rem
+            a
+                font-size: 1rem
+                padding-left: 2rem
+                margin-right: 10px
+                i
+                    margin-left: 10px
+                &:hover
+                    text-decoration: none
+                    i
+                        animation: flecha .5s ease-in alternate infinite
+
+                    @keyframes flecha
+                        0%
+                            transform: translateX(0)
+                        100%
+                            transform: translateX(15px)
+                    
+
+@media screen and (min-width: $breakpoint-pc)
+    .rafa-lopez
+        margin-top: 15rem
+        img
+            width: 25rem
+            top: -3rem
+        .text-container
+            padding-left: 25rem
+            h2
+                font-size: 4.2rem
+            p
+                font-size: 1.4rem
+                padding-left: 4rem
+            a
+                font-size: 1.4rem
+                padding-left: 4rem
+
+@media screen and (min-width: 1200px)
+    .rafa-lopez
+        img
+            top: -5rem
+            left: 1rem
+        .text-container
+            padding-left: 30rem
+
+//Trayectoria
+.trayectoria
+    img
+        width: 100%
+
+@media screen and (min-width: $breakpoint-tablet)
+    .trayectoria
+        margin-top: 5rem
+        
+        .container
+            position: relative
+
+        img
+            position: absolute
+            width: 20rem
+            top: 3rem
+            bottom: 0
+            left: 56%
+            right: 0
+
+        .text-container
+            text-align: left
+            padding-right: 10rem
+            width: 80%
+            h2
+                font-size: 2.2rem
+            p
+                font-size: 1.1rem
+                padding-right: 2rem
+            a
+                font-size: 1rem
+                padding-right: 2rem
+                i
+                    margin-left: 10px
+                &:hover
+                    text-decoration: none
+                    i
+                        animation: flecha .5s ease-in alternate infinite
+
+                    @keyframes flecha
+                        0%
+                            transform: translateX(0)
+                        100%
+                            transform: translateX(15px)
+
+@media screen and (min-width: 992px)
+    .trayectoria
+        img
+            width: 22rem
+            top: 1.4em
+
+        .text-container
+            padding-right: 16rem
+        
+
+@media screen and (min-width: $breakpoint-pc)
+    .trayectoria
+        margin-top: 10rem
+        img
+            width: 30rem
+            top: 2rem
+            left: 57%
+        .text-container
+            padding-right: 16rem
+            h2
+                font-size: 4.2rem
+            p
+                font-size: 1.4rem
+                padding-right: 4rem
+            a
+                font-size: 1.4rem
+                padding-right: 4rem
+
+//PROCESOS
+.procesos
+    .galeria-procesos
+        position: relative
+        margin-bottom: 10rem
+
+        .proceso
+            position: relative
+            height: 20rem
+
+            .text-container
+                position: relative
+                width: 90%
+                margin: 0 auto
+                top: 10rem
+                bottom: 0
+                right: 0
+                left: 0
+        #proceso1
+            background: transparent url(../img/proceso_01.jpg) no-repeat center center
+            background-size: cover
+        #proceso2
+            background: transparent url(../img/proceso_02.jpg) no-repeat center center
+            background-size: cover
+        #proceso3
+            background: transparent url(../img/proceso_03.jpg) no-repeat center center
+            background-size: cover
+
+        .slick-track
+            display: flex
+            img
+                width: 100%!important
+                margin: 0 auto
+
+        span.priv_arrow.slick-arrow
+            position: absolute!important
+            top: 59%
+            font-size: 25px
+            left: 12%
+            color: $Rojo
+            background-color: rgba($Rojo, .2)
+            border-radius: 50%
+            height: 39px
+            width: 39px
+            text-align: center
+            transition: color .2s ease
+            z-index: 1000
+            &:hover
+                color: $Negro
+                cursor: pointer
+
+        span.next_arrow.slick-arrow
+            position: absolute!important
+            top: 59%
+            font-size: 25px
+            font-weight: 300
+            left: 78%
+            color: $Rojo
+            background-color: rgba($Rojo, .2)
+            border-radius: 50%
+            height: 39px
+            width: 39px
+            text-align: center
+            transition: color .2s ease
+            z-index: 1000
+            &:hover
+                color: $Negro
+                cursor: pointer
+
+@media screen and (min-width: 575px)
+    .procesos
+        .galeria-procesos
+            span.next_arrow.slick-arrow
+                left: 75%
+
+            span.priv_arrow.slick-arrow
+                left: 18%
+
+@media screen and (min-width: 690px)
+    .procesos
+        .galeria-procesos
+            span.next_arrow.slick-arrow
+                left: 69%
+
+            span.priv_arrow.slick-arrow
+                left: 25%
+
+@media screen and (min-width: $breakpoint-tablet)
+    .procesos
+        .galeria-procesos
+            
+            .proceso
+                height: 25rem
+                .text-container
+                    padding: 2rem 4rem
+                    top: 19rem
+                    h2
+                        font-size: 2rem
+                        margin-bottom: 3rem
+                    p
+                        font-size: 1rem
+
+            span.next_arrow.slick-arrow
+                top: 21rem
+                left: 74%
+
+            span.priv_arrow.slick-arrow
+                top: 21rem
+                left: 22%
+
+@media screen and (min-width: $breakpoint-pc)
+    .procesos
+        .galeria-procesos
+
+            .proceso
+                height: 45rem
+                .text-container
+                    top: 35rem
+                    padding: 2rem 8rem
+                    h2
+                        font-size: 4rem
+                        margin-bottom: 4rem
+                    p
+                        font-size: 1.4rem
+
+            span.next_arrow.slick-arrow
+                font-size: 35px
+                height: 53px
+                width: 53px
+                top: 38rem
+                left: 71.2%
+
+            span.priv_arrow.slick-arrow
+                font-size: 35px
+                height: 53px
+                width: 53px
+                top: 38rem
+                left: 26%
+
+//PRODUCTOS DESTACADOS
+.productos-destacados
+    h1
+        color: $Rojo
+        text-align: center
+        font-size: 3.5rem
+
+    .storefront-product-section .section-title
+        display: none
+
+    ul.products li.product .woocommerce-loop-product__title
+        font-size: 1.3rem
+        text-transform: uppercase
+        font-weight: bold
+
+@media screen and (min-width: $breakpoint-tablet)
+    .productos-destacados
+        ul.products li.product .woocommerce-loop-product__title
+            font-size: 1rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .productos-destacados
+        margin-top: 5rem
+        h1
+            font-size: 5rem
+        ul.products li.product .woocommerce-loop-product__title
+            font-size: 1.3rem
+
+// ===== SECCIONES =====
+.hero
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    height: 40rem
+    .texto-hero
+        &.rafa-lopez
+            background-image: url(../img/banner_rafa_lopez.jpg)
+            margin-top: 0
+        &.obra
+            background-image: url(../img/banner_obra.jpg)
+            margin-top: 0
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        height: 100%
+        .hr-fade
+            border-width: 0 0 2px
+            background-color: transparent!important
+            $color: white
+            color: $color
+            border-image: linear-gradient(90deg, rgba($color, 0), rgba($color, 1) 50%, rgba($color, 0) 100%) 0 0 100%
+            border-style: solid
+            box-shadow: 1px 1px rgba($Negro, .1)
+            width: 90%
+        .top
+            position: absolute
+            top: 75%
+            bottom: 0
+            left: 5%
+            right: 0
+        .bottom
+            position: absolute
+            top: 88%
+            bottom: 0
+            left: 5%
+            right: 0
+        h1
+            position: absolute
+            top: 78%
+            bottom: 0
+            right: 0
+            left: 0
+            width: 90%
+            text-shadow: 3px 3px rgba($Negro, .5)
+    
+            font-size: 2.8rem
+            margin: 0 auto
+            text-align: center
+            color: $Blanco
+
+@media screen and (min-width: $breakpoint-tablet)
+    .hero
+        height: 25rem
+        .texto-hero
+            .hr-fade
+                width: 61%
+            .top
+                top: 72%
+                left: 21%
+            .bottom
+                top: 90%
+                left: 21%
+            h1
+                top: 74%
+                left: 0
+                font-size: 3rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .hero
+        height: 35rem
+        .texto-hero
+            .hr-fade
+                width: 45%
+            .top
+                top: 63%
+                left: 28%
+            .bottom
+                top: 90%
+                left: 28%
+            h1
+                top: 66%
+                left: 0
+                font-size: 6rem
+
+.margintop
+    margin-top: 30rem
+
+.dos-columnas
+    display: flex
+    flex-direction: column
+    .columna-1
+        position: relative
+        img
+            width: 100%
+
+        .slick-track
+            width: 100%!important
+            display: flex
+            align-items: center
+            img
+                width: 100%!important
+                margin: 0 auto
+        
+        .dot-custom
+            border: 2px solid $Negro
+            opacity: .5
+            height: 14px
+            width: 14px
+            margin-left: 20px
+            border-radius: 75px
+            &:first-child
+                margin-left: 0px
+
+        .slick-active
+            background-color: $Negro
+            opacity: .9
+
+        .slick-dots
+            display: flex
+            position: absolute
+            top: 91%
+            bottom: 0
+            left: 0
+            right: 0
+            justify-content: center
+            list-style: none 
+            margin: 1rem 0 0 0!important
+            z-index: 1000
+    .columna-2
+        background-color: $Blanco
+        color: $Negro
+        padding: 2rem
+        text-align: center
+        border-radius: 0 10px 10px 0
+        h2
+            font-size: 3rem
+            color: $Rojo
+        p
+            font-size: 1.2rem
+            line-height: 1.3
+            margin: 0
+
+.marginbt
+    margin: 7rem 0
+
+@media screen and (min-width: $breakpoint-tablet)
+    .margintop
+        margin-top: 15rem
+
+    .dos-columnas
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        .columna-1
+            flex-basis: 28%
+
+            .slick-dots
+                top: 100%
+        .columna-2
+            flex-basis: 70%
+            h2
+                font-size: 2.5rem
+                text-align: left
+            p
+                font-size: .9rem
+                padding-left: 1rem
+                text-align: left
+
+    .orden
+        order: -1
+        border-radius: 10px 0 0 10px!important
+
+    .marginbt
+        margin: 7rem 0
+
+@media screen and (min-width: 992px)
+    .dos-columnas
+        .columna-2
+            h2
+                font-size: 3.5rem
+                margin: 0
+            p
+                font-size: 1.1rem
+                padding: 2rem 2rem 2rem 3rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .margintop
+        margin-top: 26rem
+
+    .marginbt
+        margin: 8rem 0
+
+    .dos-columnas
+        .columna-1
+            flex-basis: 35%
+        .columna-2
+            flex-basis: 63%
+            h2
+                font-size: 5rem
+            p
+                font-size: 1.1rem
+                padding: 4rem 2rem 4rem 4rem
+
+    .orden
+        p
+            padding: 4rem 5rem 4rem 2rem
+    
+    .paddingtop
+        padding-top: 2rem!important
+
+@media screen and (min-width: 1200px)
+    .dos-columnas
+        .columna-2
+            p
+                font-size: 1.3rem
+
+//Banner
+.banner
+    margin: 5rem 0
+    height: 30rem
+    background-image: url(../img/banner_rafa_lopez_02.jpg)
+    background-size: cover
+    background-position: 50%
+    background-repeat: no-repeat
+    display: flex
+    align-items: center
+    justify-content: center
+    h2
+        color: $Blanco
+        font-style: italic
+        text-shadow: 3px 3px rgba($Negro, .5)
+        font-size: 2.7rem
+
+@media screen and (min-width: $breakpoint-tablet)
+    .banner
+        height: 20rem
+
+@media screen and (min-width: $breakpoint-pc)
+    .banner
+        height: 25rem
+        h2
+            font-size: 4rem
+
+//Catalogo
+.storefront-sorting:nth-child(3) .woocommerce-pagination,
+.storefront-sorting:last-child .woocommerce-ordering,
+.storefront-sorting:last-child .woocommerce-result-count
+    display: none
+
+ul.products li.product .woocommerce-loop-product__title
+    font-size: 1.7rem!important
+    color: $Negro
+
+span.woocommerce-Price-amount.amount
+    font-size: 1.5rem!important
+    font-weight: bold
+    color: $Negro!important
+    &::after
+        content: ' MXN'
+
+ul.products li.product .button
+    background-color: transparent 
+    font-weight: 300
+    font-style: italic
+    color: $Negro
+    padding: 0
+    font-size: 1.4rem
+
+@media screen and (min-width: $breakpoint-tablet)
+    ul.products li.product .woocommerce-loop-product__title
+        font-size: 1.5rem!important
+
+    span.woocommerce-Price-amount.amount
+        font-size: 1.3rem!important
+    
+    ul.products li.product .button
+        font-size: 1.2rem
+
+    a.woocommerce-LoopProduct-link.woocommerce-loop-product__link:hover
+        color: $Negro!important
+
+//Vista de producto
+.single-product div.product .woocommerce-product-gallery
+    margin-top: 3rem!important
+
+.single-product div.product .woocommerce-product-gallery
+    float: right!important
+
+.product_title
+    font-size: 4rem
+    color: $Rojo!important
+    text-align: center
+
+.woocommerce-product-details__short-description p
+    color: $Negro!important
+    font-weight: 400
+    text-align: center
+
+.single-product div.product p.price
+    text-align: center!important
+    span.woocommerce-Price-amount.amount
+        font-size: 2.2rem!important
+
+.quantity .qty
+    display: none
+
+button.alt
+    color: $Rojo!important
+    font-style: italic
+    font-size: 1.2rem
+    font-family: 'EB Garamond', serif!important
+    background-color: transparent!important
+    width: 100%
+    font-weight: 400
+    transition: all .2s ease-in-out
+    &:hover
+        text-decoration: underline
+    
+
+.related > h2:first-child
+    font-size: 2.3rem!important
+    padding-top: 0
+    text-align: center
+
+.woocommerce-product-details__short-description
+    // font-family: $Noto
+
+.single-product div.product .woocommerce-tabs,
+.storefront-sticky-add-to-cart
+    display: none!important
+
+@media screen and (min-width: $breakpoint-tablet)
+    .product_title
+        font-size: 3rem
+        text-align: left
+
+    .single-product div.product
+        margin-top: 3rem
+
+    .woocommerce-product-details__short-description p,
+    .single-product div.product p.price
+        text-align: left!important
+
+    button.alt 
+        padding: .4rem 0
+        width: 45%
+
+    .single-product div.product .summary
+        width: 44%!important
+
+    .single-product div.product .woocommerce-product-gallery
+        width: 50%!important
+
+    .single-product div.product .summary
+        display: flex
+        flex-flow: column
+
+    .single-product div.product p.price
+        margin: 0!important
+        order: 1
+
+    .single-product div.product form.cart
+        order: 1
+
+    .single-product div.product .product_meta
+        order: 1
+
+@media screen and (min-width: $breakpoint-pc)
+    .product_title
+        font-size: 4rem
+
+    .woocommerce-product-details__short-description p
+        font-size: 1.2rem
+        width: 80%
+
+    .single-product div.product p.price
+        span.woocommerce-Price-amount.amount
+            font-size: 2.3rem!important
+
+    button.alt
+        width: 40%
+        font-size: 1.7rem
+
+    .related>h2:first-child
+        font-size: 3.3rem!important
+        padding-top: 5rem
+        margin-bottom: .7rem!important
+
+    figure.woocommerce-product-gallery__wrapper
+        margin-left: 4rem
+
+//CONTACTO
+.contacto
+    h1
+        color: $Rojo
+        font-size: 3rem
+        text-align: center
+        margin-bottom: .7rem
+        span
+            display: none
+
+    h2
+        text-align: center
+    .contenedor-contacto
+        margin: 3rem 0
+        display: flex
+        flex-direction: column
+        background-color: $Blanco
+        border-radius: 6px
+        -webkit-box-shadow: 0px 7px 18px 0px rgba(0,0,0,0.31)
+        -moz-box-shadow: 0px 7px 18px 0px rgba(0,0,0,0.31)
+        box-shadow: 0px 7px 18px 0px rgba(0,0,0,0.31)
+
+        .formulario-contacto
+            position: relative
+            padding: 1rem
+            form
+                margin: 0
+                input[type="text"],
+                input[type="email"],
+                textarea
+                    box-sizing: border-box
+                    width: 100%
+                    margin: 0 0 1rem
+                    padding: 6px 0
+                    background: $Blanco
+                    font-size: 1.2rem
+                    outline: none
+                    box-shadow: none
+                    border-bottom: 1px solid $Negro
+
+                textarea
+                    height: 120px
+                    resize: none
+
+                .btn-contact
+                    display: block
+                    margin: 2rem auto
+                    background-color: transparent
+                    color: $Rojo
+                    font-size: 1.2rem
+                    border: 1px solid $Negro
+                    width: 100%
+                    padding: 5px 30px
+                    outline: none
+                    transition: opacity .3s ease
+                    &:hover
+                        opacity: .7
+
+            .notificacion
+                position: absolute
+                top: 6rem
+                right: -10px
+                left: -10px
+                padding: 1.5rem 3rem
+                text-align: center
+                opacity: 0
+                font-size: 1.8rem
+                transition: opacity .3s ease
+                z-index: 99999
+
+            .aparece
+                opacity: .8
+
+            .correcto
+                position: absolute
+                background-color: $Rojo
+                color: white
+
+            .error
+                position: absolute
+                background-color: rgb(238, 148, 166)
+                color: white
+
+            .sombra
+                -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
+                -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
+                box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
+                border-radius: 10px
+        .imagen-contacto
+            img
+                border-radius: 0!important
+
+@media screen and (min-width: $breakpoint-tablet)
+    .contacto
+        h1
+            text-align: left
+            font-size: 2rem
+            span
+                display: inline
+                color: $Negro
+
+        h2
+            text-align: left
+            font-size: 2.5rem
+
+        .contenedor-contacto
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            margin-top: 5rem
+            .formulario-contacto
+                flex-basis: 60%
+
+                form
+                    .btn-contact
+                        width: 50%
+                        margin: 2rem auto
+                        padding: 2px 30px
+            .imagen-contacto
+                flex-basis: 54%
+
+@media screen and (min-width: $breakpoint-pc)
+    .contacto
+        h1
+            font-size: 3.5rem
+        
+        h2
+            font-size: 4rem
+
+        .contenedor-contacto
+            margin-top: 7rem
+            .formulario-contacto
+                form
+                    input[type="text"],
+                    input[type="email"],
+                    textarea
+                        font-size: 1.5rem
+
+                    .btn-contact
+                        font-size: 1.4rem
+
+            .imagen-contacto
+                flex-basis: 40%
+//FOOTER
+.site-footer
+    background-color: transparent
+    padding-bottom: 1rem
+
+    a:not(.button):not(.components-button)
+        text-decoration: none
+
+    h2.copyright
+        font-size: 1.2rem!important
+        text-align: center
+        padding: 1rem 0
+        letter-spacing: 4px
+        a:hover
+            text-decoration: underline
+
+    .contenedor-flex
+        display: flex
+        flex-direction: column
+        border-top: 1px solid rgba($Negro, .5)
+        padding-top: 3rem
+        padding-bottom: 1.5rem
+        text-align: center
+        .menu-footer
+            h3
+                color: $Rojo
+                font-size: 1.5rem
+                font-weight: bold
+            ul
+                list-style: none
+                margin: 0
+                li
+                    text-decoration: none
+                    font-size: 1.2rem
+                    &:hover
+                        text-decoration: underline
+
+        .logo-footer
+            padding: 1.5rem 0
+            img
+                filter: invert(1)
+                width: 13rem
+                margin: 0 auto
+
+        .contacto-footer
+            padding: 1.5rem 0
+            .telefono a,
+            .whatsapp a,
+            .email a
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 1.1rem
+                font-weight: bold
+                &:hover
+                    text-decoration: underline
+                p
+                    margin: .5rem 0
+                    margin-left: 10px
+
+@media screen and (min-width: $breakpoint-tablet)
+    .site-footer
+        .contenedor-flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            
+            .menu-footer
+                text-align: left
+                ul li
+                    text-transform: uppercase
+                    font-size: 1.1rem
+            .contacto-footer
+                .telefono a,
+                .whatsapp a,
+                .email a
+                    justify-content: flex-start
+
+@media screen and (min-width: $breakpoint-pc)
+    .site-footer
+        .contenedor-flex
+            padding: 2rem 1rem 0 1rem
+
+            .contacto-footer
+                .telefono a,
+                .whatsapp a,
+                .email a
+                    font-size: 1.2rem
+
