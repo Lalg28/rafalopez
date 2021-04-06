@@ -38,7 +38,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="stylesheet" href="assets/fonts/styles.css">
-<link href="https://file.myfontastic.com/LN33oX4mnHEKpseP5Ww9Gh/icons.css" rel="stylesheet">
 <link rel="shortcut icon" href="../wp-content/themes/vidrioguicho/assets/img/logo.ico" type="image/ico">
 <!-- MAPA -->
 <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css"

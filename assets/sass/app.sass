@@ -196,8 +196,14 @@ section
             bottom: 0
             right: 0
             left: 10px
-            a img
+            a
+                width: 18%
+                display: block
                 margin: 0 auto
+                position: relative
+                z-index: 999
+                img
+                    margin: 0 auto
 
         .main-navigation
             width: 100%!important
@@ -240,8 +246,10 @@ section
         .site-branding 
             top: 0rem
             left: 13px
-            a img
+            a 
                 width: 12rem
+                img
+                    width: 12rem
 
     .home 
         .site-header
@@ -774,7 +782,7 @@ section
                 font-size: 6rem
 
 .margintop
-    margin-top: 30rem
+    margin-top: 35rem
 
 .dos-columnas
     display: flex
@@ -836,7 +844,7 @@ section
 
 @media screen and (min-width: $breakpoint-tablet)
     .margintop
-        margin-top: 15rem
+        margin-top: 20rem
 
     .dos-columnas
         flex-direction: row
@@ -876,7 +884,7 @@ section
 
 @media screen and (min-width: $breakpoint-pc)
     .margintop
-        margin-top: 26rem
+        margin-top: 30rem
 
     .marginbt
         margin: 8rem 0

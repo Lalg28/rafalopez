@@ -26,7 +26,7 @@ get_header(); ?>
                                 tonalteca y elementos artísticos más eclécticos. Aparte de la alfarería domina diversas técnicas y trabaja en comisiones de pintura
                                 y escultura. Su obra ha sido presentada en diversos países del mundo como USA, Holanda y Australia.
                             </p>
-                            <a href="#">Conoce más de la historia de Rafa López <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://ollinarteenmovimiento.com/rafa-lopez/">Conoce más de la historia de Rafa López <i class="fas fa-arrow-right"></i></a>
                        </div>
                 </div>
             </section>
@@ -40,7 +40,7 @@ get_header(); ?>
                         encuentro un lenguaje gráfico que se repite constantemente: ya sea en una piedra, en la superficie arrugada
                         de un papel o escondido en cualquier otro tipo de superficie
                         </p>
-                        <a href="#">Sigue su obra a travéz del tiempo <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://ollinarteenmovimiento.com/obra/">Sigue su obra a travéz del tiempo <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </section>

@@ -80,7 +80,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 	function storefront_site_branding() {?>
             
 			<div class="site-branding">
-                <a href="http://localhost:8888/ollin/"><img src="<?php echo get_stylesheet_directory_uri(). '/assets/img/logo_rafa_lopez.svg' ?>" alt="logo Ollin"></a>
+                <a href="/"><img src="<?php echo get_stylesheet_directory_uri(). '/assets/img/logo_rafa_lopez.svg' ?>" alt="logo Ollin"></a>
             </div>
         <?php
 	}

@@ -212,6 +212,13 @@ section {
     right: 0;
     left: 10px;
   }
+  .site-header .site-branding a {
+    width: 18%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+  }
   .site-header .site-branding a img {
     margin: 0 auto;
   }
@@ -256,6 +263,9 @@ section {
   .site-header .site-branding {
     top: 0rem;
     left: 13px;
+  }
+  .site-header .site-branding a {
+    width: 12rem;
   }
   .site-header .site-branding a img {
     width: 12rem;
@@ -901,7 +911,7 @@ section {
 }
 
 .margintop {
-  margin-top: 30rem;
+  margin-top: 35rem;
 }
 
 .dos-columnas {
@@ -984,7 +994,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .margintop {
-    margin-top: 15rem;
+    margin-top: 20rem;
   }
   .dos-columnas {
     flex-direction: row;
@@ -1031,7 +1041,7 @@ section {
 
 @media screen and (min-width: 1100px) {
   .margintop {
-    margin-top: 26rem;
+    margin-top: 30rem;
   }
   .marginbt {
     margin: 8rem 0;
